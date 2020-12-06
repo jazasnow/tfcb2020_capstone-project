@@ -1,7 +1,9 @@
 # Capstone Project
- Capstone Project for TFCB 2020
- Jazmine A. Snow
- December 2020
+Capstone Project for TFCB 2020
+ 
+Jazmine A. Snow
+
+December 2020
 
 # Description
 
