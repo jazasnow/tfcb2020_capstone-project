@@ -38,6 +38,7 @@ Location of Triple-Negative Breast Cancers: Comparison with Estrogen Receptor-Po
 ## Question 1
 
 ## Question 2
+![Question 2](../main/figures/tfcb-capstone_question02_tumor-size-comparison_bar-graph-figure.jpg)
 
 ## Question 3
 
