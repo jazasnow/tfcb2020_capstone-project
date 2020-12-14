@@ -1,0 +1,12 @@
+---
+title: "tfcb-capstone_question03_tumor-location-comparison"
+author: "Jazmine Snow"
+date: "12/14/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Question 3
