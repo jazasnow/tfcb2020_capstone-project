@@ -112,7 +112,7 @@ size_stats %>%
 # Added error bars that have the standard deviation data represented. I also changed the width of the error bars to make them easier to see. 
   geom_errorbar(aes(ymin = mean_tumor_size - st.dev_tumor_size , ymax = mean_tumor_size + st.dev_tumor_size, width = 0.49)) +
 # Added a title to this graph where ER+ stands for er_pos and TN stands for trip_neg tumors.
-  ggtitle("Average Tumor Size for ER+ and TN tumors") +
+  ggtitle("Average Tumor Size for ER+ and TN") +
 # Removed the x axis label since it was not necessary for this graph and added a label for the y axis.
   labs(x = NULL, y = "Average Tumor Size (cm)") +
 # Increased the size of the text to have it better conform to proportional ink standards. Also hid the legend by having its position be "none" since it is already given on the x axis. 
@@ -125,7 +125,7 @@ size_stats %>%
 # Increased the y axis scale from 4 to 5 because the data was looking a little cramped.
   ylim(0,5) 
 # Save the figure using ggsave 
-  # ggsave("tfcb-capstone_question02_tumor-size-comparison_bar-graph-figure.jpg")
+  #ggsave("tfcb-capstone_question02_tumor-size-comparison_bar-graph-figure.jpg")
 ```
 
 
