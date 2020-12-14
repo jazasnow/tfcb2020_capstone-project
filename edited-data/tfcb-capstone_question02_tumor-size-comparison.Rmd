@@ -127,9 +127,10 @@ size_stats %>%
 # Save the figure using ggsave 
   #ggsave("tfcb-capstone_question02_tumor-size-comparison_bar-graph-figure.jpg")
 ```
+This bar graph visualizes the table shown above.  
 
-
-
+### Conclusions
+There does not seem to be a difference in average tumor size between ER-positive and triple-negative breast cancers in this dataset. This is consistent with the findings that the authors made in the associated paper. It is interesting when taken into the context of question 1 where there looks to be an increase in pathology with triple-negative tumors when compared to ER-positive tumors. This shows that there is not always a correlation between tumor size and severity. 
 
 
 
