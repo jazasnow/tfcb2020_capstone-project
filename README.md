@@ -14,7 +14,8 @@ December 16, 2020
 
 # [Edited Data](../main/edited-data)
 ## Published Paper
-Location of Triple-Negative Breast Cancers: Comparison with Estrogen Receptor-Positive Breast Cancers on MR Imaging <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0116344>
+Location of Triple-Negative Breast Cancers: Comparison with Estrogen Receptor-Positive Breast Cancers on MR Imaging:
+Kim WH, Han W, Chang JM, Cho N, Park IA, Moon WK (2015) Location of Triple-Negative Breast Cancers: Comparison with Estrogen Receptor-Positive Breast Cancers on MR Imaging. PLoS ONE 10(1): e0116344. <https://doi.org/10.1371/journal.pone.0116344> 
   - I have provided the published paper that this dataset was taken from above for referrence. 
 
 ## [Edited Tumor Location Data](../main/edited-data/tumor-location_edited-data_csv.csv)
