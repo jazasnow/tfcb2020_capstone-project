@@ -27,8 +27,8 @@ library(ggplot2)
 Load the file that contains the information given for this project. In this case, it is a csv file. 
 ```{r}
 # Created a new variable called "raw_data" that reads the csv file I created of the raw-data.
-raw_data <- read.csv("tumor-location_edited-data_csv.csv", as.is = TRUE) %>%
-  
+raw_data <- read.csv("/Users/jazas/OneDrive/Documents/GitHub/tfcb2020_capstone-project/tfcb2020_capstone-project/edited-data/tumor-location_edited-data_csv.csv", as.is = TRUE) %>%
+    
 # Had to change the id name because it adds a weird character to it, I believe that this is because it was originally an excel file.
   rename(id = `ï..id`)
 
@@ -115,7 +115,7 @@ size_stats <- assigned_data %>%
 The average tumor size for ER-positive samples is 2.41 with a standard deviation of +- 1.30. The average tumor size for triple-negative samples is 2.65 with a standard deviation of +- 1.17. Just by looking at the data, it does not appear that there is a signficant change in tumor size between the two subtypes. 
 
 ### Graph tumor size data
-To visualize this data, I decided to use a bar graph. I picked a bar graph because I think that it best represents the data derived from my analysis. 
+To visualize this data, I decided to use a bar graph. I picked a bar graph because I think that it best represents the data derived from my analysis. Since I am only comparing one variable (mean tumor size) between the two subtypes, I think that a bar graph will portray my data accurately and understandably. 
 ```{r, fig.width=8, fig.height=6} 
 size_stats %>%
 # Made a graph using ggplot with subtype on the x axis, mean tumor size on the y avis, where the two different subtypes are also separated by color and fill of the bars.

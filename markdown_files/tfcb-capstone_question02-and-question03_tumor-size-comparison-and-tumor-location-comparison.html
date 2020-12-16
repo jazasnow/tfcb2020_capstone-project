@@ -446,8 +446,8 @@ library(dbplyr)</code></pre>
 <h3>Load file for project</h3>
 <p>Load the file that contains the information given for this project. In this case, it is a csv file.</p>
 <pre class="r"><code># Created a new variable called &quot;raw_data&quot; that reads the csv file I created of the raw-data.
-raw_data &lt;- read.csv(&quot;tumor-location_edited-data_csv.csv&quot;, as.is = TRUE) %&gt;%
-  
+raw_data &lt;- read.csv(&quot;/Users/jazas/OneDrive/Documents/GitHub/tfcb2020_capstone-project/tfcb2020_capstone-project/edited-data/tumor-location_edited-data_csv.csv&quot;, as.is = TRUE) %&gt;%
+    
 # Had to change the id name because it adds a weird character to it, I believe that this is because it was originally an excel file.
   rename(id = `ï..id`)
 
@@ -606,7 +606,7 @@ size_stats &lt;- assigned_data %&gt;%
 </div>
 <div id="graph-tumor-size-data" class="section level3">
 <h3>Graph tumor size data</h3>
-<p>To visualize this data, I decided to use a bar graph. I picked a bar graph because I think that it best represents the data derived from my analysis.</p>
+<p>To visualize this data, I decided to use a bar graph. I picked a bar graph because I think that it best represents the data derived from my analysis. Since I am only comparing one variable (mean tumor size) between the two subtypes, I think that a bar graph will portray my data accurately and understandably.</p>
 <pre class="r"><code>size_stats %&gt;%
 # Made a graph using ggplot with subtype on the x axis, mean tumor size on the y avis, where the two different subtypes are also separated by color and fill of the bars.
   ggplot(aes(subtype, mean_tumor_size, color = subtype, fill = subtype)) +
