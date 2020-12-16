@@ -457,8 +457,11 @@ library(dbplyr)</code></pre>
 <div id="load-file-for-project" class="section level3">
 <h3>Load file for project</h3>
 <p>Load the file that contains the information given for this project. In this case, it is a csv file.</p>
-<pre class="r"><code># Created a new variable called &quot;raw_data&quot; that reads the csv file I created of the raw-data.
-raw_data &lt;- read.csv(&quot;../edited-data/tumor-location_edited-data_csv.csv&quot;, as.is = TRUE) %&gt;%
+<pre class="r"><code># Created a new variable called filename that will have the file that is being used.
+filename &lt;- &quot;../edited-data/tumor-location_edited-data_csv.csv&quot;
+
+# Created a new variable called &quot;raw_data&quot; that reads the csv file I created of the raw-data.
+raw_data &lt;- read.csv(filename, as.is = TRUE) %&gt;%
     
 # Had to change the id name because it adds a weird character to it, I believe that this is because it was originally an excel file.
   rename(id = `ï..id`)
