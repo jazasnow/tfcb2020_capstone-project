@@ -564,11 +564,10 @@ head(trip_neg)</code></pre>
 ## 4    0.3    0.1     4       -0.6        1.4           0         3
 ## 5    0.3    0.2     3        0.0        2.8           1         3
 ## 6    0.3    0.1     1        0.2        1.2           1         3</code></pre>
-<pre class="r"><code># Calculated the numer of samples in each subtype by counting the number of rows in each dataframe.
-nrow(er_pos)</code></pre>
-<pre><code>## [1] 782</code></pre>
-<pre class="r"><code>nrow(trip_neg)</code></pre>
-<pre><code>## [1] 229</code></pre>
+<pre class="r"><code># Calculated the number of samples in each subtype by counting the number of rows in each dataframe.
+# Created a new dataframe with the count of er_pos and trip_neg tumors to use for later analysis.
+er_pos_tumor_number &lt;- nrow(er_pos)
+trip_neg_tumor_number &lt;- nrow(trip_neg)</code></pre>
 <p>For my data, there are 782 samples that are ER-positive and 229 samples that are triple-negative tumors.</p>
 </div>
 <div id="combined-the-two-dataframes-back-into-one-dataframe" class="section level3">
@@ -675,7 +674,7 @@ quadrant_counts &lt;- inner_join(quadrant_data_er_pos, quadrant_data_trip_neg, b
 
 # Added the percentages for each of the subtypes by mutating the table to form new columns for each one. 
 quadrant_data &lt;- quadrant_counts %&gt;%
-  mutate(quadrant_counts, er_pos_percent = (( er_pos_count / 782) * 100), trip_neg_percent = ((trip_neg_count / 229) * 100)) 
+  mutate(quadrant_counts, er_pos_percent = (( er_pos_count / er_pos_tumor_number) * 100), trip_neg_percent = ((trip_neg_count / trip_neg_tumor_number) * 100)) 
 
 # Created a list with the names of each column to reorder the way they are presented to make it easier to compare the data.
 quadrant_column_order &lt;- c(&quot;quadrants&quot;, &quot;er_pos_count&quot;, &quot;er_pos_percent&quot;, &quot;trip_neg_count&quot;, &quot;trip_neg_percent&quot;)
@@ -706,7 +705,7 @@ ml_location_counts &lt;- inner_join(ml_data_er_pos, ml_data_trip_neg, by = &quot
 
 # Added the percentages for each of the subtypes by mutating the table to form new columns for each one. 
 ml_location_data &lt;- ml_location_counts %&gt;%
-  mutate(ml_location_counts, er_pos_percent = (( er_pos_count / 782) * 100), trip_neg_percent = ((trip_neg_count / 229) * 100))
+  mutate(ml_location_counts, er_pos_percent = (( er_pos_count / er_pos_tumor_number) * 100), trip_neg_percent = ((trip_neg_count / trip_neg_tumor_number) * 100))
 
 # Created a list with the names of each column to reorder the way they are presented to make it easier to compare the data.
 ml_location_column_order &lt;- c(&quot;ml_location&quot;, &quot;er_pos_count&quot;, &quot;er_pos_percent&quot;, &quot;trip_neg_count&quot;, &quot;trip_neg_percent&quot;)
@@ -739,7 +738,7 @@ ap_location_counts &lt;- inner_join(ap_data_er_pos, ap_data_trip_neg, by = &quot
 
 # Added the percentages for each of the subtypes by mutating the table to form new columns for each one. 
 ap_location_data &lt;- ap_location_counts %&gt;%
-  mutate(ap_location_counts, er_pos_percent = (( er_pos_count / 782) * 100), trip_neg_percent = ((trip_neg_count / 229) * 100))
+  mutate(ap_location_counts, er_pos_percent = (( er_pos_count / er_pos_tumor_number) * 100), trip_neg_percent = ((trip_neg_count / trip_neg_tumor_number) * 100))
 
 # Created a list with the names of each column to reorder the way they are presented to make it easier to compare the data.
 ap_location_column_order &lt;- c(&quot;ap_location&quot;, &quot;er_pos_count&quot;, &quot;er_pos_percent&quot;, &quot;trip_neg_count&quot;, &quot;trip_neg_percent&quot;)
