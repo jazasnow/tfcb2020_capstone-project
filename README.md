@@ -12,17 +12,17 @@ December 16, 2020
  - [Raw Data](../main/raw-data)
  - [Edited Data](../main/edited-data)
  - [Code](../main/code)
+ 
+# Published Paper
+Location of Triple-Negative Breast Cancers: Comparison with Estrogen Receptor-Positive Breast Cancers on MR Imaging:
+Kim WH, Han W, Chang JM, Cho N, Park IA, Moon WK (2015) Location of Triple-Negative Breast Cancers: Comparison with Estrogen Receptor-Positive Breast Cancers on MR Imaging. PLoS ONE 10(1): e0116344. <https://doi.org/10.1371/journal.pone.0116344> 
 
 # [Raw Data](../main/raw-data)
 [Tumor Location Data](../main/raw-data/tumor%20location%20raw%20data_final.xls)
   - This file was the one that was provided by the original researchers for this dataset.
 
 # [Edited Data](../main/edited-data)
-## Published Paper
-Location of Triple-Negative Breast Cancers: Comparison with Estrogen Receptor-Positive Breast Cancers on MR Imaging:
-Kim WH, Han W, Chang JM, Cho N, Park IA, Moon WK (2015) Location of Triple-Negative Breast Cancers: Comparison with Estrogen Receptor-Positive Breast Cancers on MR Imaging. PLoS ONE 10(1): e0116344. <https://doi.org/10.1371/journal.pone.0116344> 
-
-## [Edited Tumor Location Data](../main/edited-data/tumor-location_edited-data_csv.csv)
+[Edited Tumor Location Data](../main/edited-data/tumor-location_edited-data_csv.csv)
 - For this file, I tidied the data a little by cleaning up the column names, and adding NA to the size column when a size was not recorded. 
 - I also converted this file from an  excel spreadsheet to a csv file to use for my analysis. 
 
