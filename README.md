@@ -7,6 +7,11 @@ December 16, 2020
 
 # Description
  - This project compared the locational data of triple negative (which I will be referring to as "trip_neg") breast cancers with estrogen-receptor positive (which I will be referring to as "er_pos") breast cancers using MRI techniques. 
+ 
+ # Directories
+ - [Raw Data](../main/raw-data)
+ - [Edited Data](../main/edited-data)
+ - [Code](../main/code)
 
 # [Raw Data](../main/raw-data)
 [Tumor Location Data](../main/raw-data/tumor%20location%20raw%20data_final.xls)
@@ -20,6 +25,18 @@ Kim WH, Han W, Chang JM, Cho N, Park IA, Moon WK (2015) Location of Triple-Negat
 ## [Edited Tumor Location Data](../main/edited-data/tumor-location_edited-data_csv.csv)
 - For this file, I tidied the data a little by cleaning up the column names, and adding NA to the size column when a size was not recorded. 
 - I also converted this file from an  excel spreadsheet to a csv file to use for my analysis. 
+
+# [Code](../main/code)
+## Python code 
+[Question 1](../main/code/tfcb-capstone_question01_tumor-severity-comparison.ipynb)
+- This file has the code and markdown to answer question 1.
+
+## R code
+[Questions 2 and 3](../main/code/tfcb-capstone_question02-and-question03_tumor-size-comparison-and-tumor-location-comparison.Rmd)
+- This file has the code to answer questions 2 and 3.
+
+[Markdown file](../main/code/tfcb-capstone_question02-and-question03_tumor-size-comparison-and-tumor-location-comparison.html)
+- This file is the knitted markdown file for questions 2 and 3.
 
 # Questions
 ## Question 1
