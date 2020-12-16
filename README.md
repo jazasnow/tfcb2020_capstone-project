@@ -36,7 +36,7 @@ Kim WH, Han W, Chang JM, Cho N, Park IA, Moon WK (2015) Location of Triple-Negat
 - This file has the code to answer questions 2 and 3.
 
 [Markdown file](../main/code/tfcb-capstone_question02-and-question03_tumor-size-comparison-and-tumor-location-comparison.html)
-- This file is the knitted markdown file for questions 2 and 3.
+- This file is an html file for questions 2 and 3.
 
 # Questions
 ## Question 1
