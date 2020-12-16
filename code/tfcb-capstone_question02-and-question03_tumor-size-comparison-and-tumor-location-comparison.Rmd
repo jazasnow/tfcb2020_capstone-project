@@ -1,6 +1,6 @@
 ---
-title: "TFCB Capstone: Questions 2 and 3 Code"
-author: "Jazmine Snow"
+title: "Comparison of size and location data between estrogen-receptor positive (er_pos) and triple-negative (trip_neg) breast cancer tumors"
+author: "Jazmine A. Snow"
 date: "2020-12-14"
 output: html_document
 ---
@@ -8,6 +8,16 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+This code is in connection with the TFCB Capstone project (homework 8). I am using a the raw dataset from <https://datadryad.org/stash/dataset/doi:10.5061/dryad.32765> to answer two specific questions that are described below.
+
+
+## Questions for R analysis
+### Question 2
+Did the average size of the tumor change between the triple-negative (trip_neg) tumors and the estrogen-receptor positive (er_pos) tumors?
+
+### Question 3
+Were there locational differences between triple-negative (trip_neg) tumors and the estrogen-receptor positive (er_pos) tumors?
 
 ## Setup for projects
 
