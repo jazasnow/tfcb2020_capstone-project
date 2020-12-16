@@ -1,4 +1,4 @@
-# Observing tumor severity, size, and location data of triple negative breast cancers in comparison to estrogen-receptor positive breast cancers.
+# Observing tumor severity, size, and location data of triple negative breast cancers in comparison to estrogen-receptor positive breast cancers
 Capstone Project for TFCB 2020
  
 Jazmine A. Snow
