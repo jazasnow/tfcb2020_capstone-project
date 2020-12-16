@@ -37,7 +37,7 @@ library(ggplot2)
 Load the file that contains the information given for this project. In this case, it is a csv file. 
 ```{r}
 # Created a new variable called "raw_data" that reads the csv file I created of the raw-data.
-raw_data <- read.csv("/Users/jazas/OneDrive/Documents/GitHub/tfcb2020_capstone-project/tfcb2020_capstone-project/edited-data/tumor-location_edited-data_csv.csv", as.is = TRUE) %>%
+raw_data <- read.csv("../edited-data/tumor-location_edited-data_csv.csv", as.is = TRUE) %>%
     
 # Had to change the id name because it adds a weird character to it, I believe that this is because it was originally an excel file.
   rename(id = `ï..id`)
